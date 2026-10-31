@@ -73,7 +73,7 @@ def save_to_json(scraped_data, filename="hockey_teams.json"):
         json.dump(scraped_data, file, ensure_ascii=False, indent=4)
     print(f"Save to json: {filename}")
 
-data = scrape_hockey_teams(2)
+data = scrape_hockey_teams(24)
 save_to_csv(data)
 save_to_tsv(data)
 save_to_json(data)
